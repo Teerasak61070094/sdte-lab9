@@ -51,7 +51,7 @@ jobs:
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
           task-definition: ${{ steps.task-def.outputs.task-definition }}
-          service: lab9-service
+          service: lab9_service
           cluster: lab9_cluster
           wait-for-service-stability: false
 
